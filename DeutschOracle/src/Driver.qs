@@ -1,10 +1,11 @@
-namespace DeutschOracle {
+namespace DeutschOracle.src {
 
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     
     @EntryPoint()
-    operation SayHello() : Unit {
-        Message("Hello quantum world!");
+    operation driver() : Unit {
+        let constantZeroConstant = IsConstantZeroConstant();
+        Message($"Constant-0 Constant? {constantZeroConstant}");
     }
 }
